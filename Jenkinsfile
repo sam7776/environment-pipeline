@@ -18,7 +18,7 @@ pipeline {
       steps {
         sh '''
           # Custom Env Variables
-          echo "my name is ${namemera}"
+          echo "my name is ${namemera}" > name.txt
           echo "her name is ${teranaam}"
         '''
       }
