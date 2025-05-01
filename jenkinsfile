@@ -18,7 +18,7 @@ pipeline {
       steps {
         sh '''
           echo "my name is ${namemera}"
-          echo "her name is ${teramera}"
+          echo "her name is ${teranaam}"
         '''
       }
     }
