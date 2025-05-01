@@ -8,7 +8,7 @@ pipeline {
     stage("Git check") {
       steps {
         sh '''
-          rm -rf jenkins-pipeline
+          rm -rf environment-pipeline
           git clone https://github.com/sam7776/environment-pipeline.git
           echo 'Git working successfully'
         '''
@@ -20,6 +20,7 @@ pipeline {
           # Custom Env Variables
           echo "my name is ${namemera}" 
           echo "her name is ${teranaam}"
+          > nishant.txt
         '''
       }
     }
