@@ -1,0 +1,23 @@
+pipeline{
+  agent any
+  environment{
+    namemera = "Nishant ashok meshram"
+  }
+  stages{
+    stage("Git check"){
+      steps{
+        sh '''
+        git 'https://github.com/sam7776/jenkins-pipeline.git'
+        echo 'Git working successfully'
+        '''
+      }
+    }
+    stage("Env Test"){
+      steps{
+        sh '''
+        echo "my name is" $namemera
+        '''
+      }
+    }
+  }
+}
