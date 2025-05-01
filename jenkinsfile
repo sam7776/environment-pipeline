@@ -23,7 +23,7 @@ pipeline {
       stage(" Test Cases") {
       steps {
         sh '''
-          echo "Build no is ${BUILD_NO}"
+          echo "Build no is ${BUILD_NUMBER}"
           echo "Workspace is ${WORKSPACE}"
         '''
       }
