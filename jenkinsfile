@@ -17,6 +17,7 @@ pipeline {
     stage("Env Test") {
       steps {
         sh '''
+          # Custom Env Variables
           echo "my name is ${namemera}"
           echo "her name is ${teranaam}"
         '''
@@ -25,6 +26,7 @@ pipeline {
       stage(" Test Cases") {
       steps {
         sh '''
+          # Default Env Variables
           echo "Build no is ${BUILD_NUMBER}"
           echo "Workspace is ${WORKSPACE}"
           echo "JOB NAME is ${JOB_NAME}"
