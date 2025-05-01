@@ -9,7 +9,7 @@ pipeline {
       steps {
         sh '''
           rm -rf jenkins-pipeline
-          git clone https://github.com/sam7776/jenkins-pipeline.git
+          git clone https://github.com/sam7776/environment-pipeline.git
           echo 'Git working successfully'
         '''
       }
