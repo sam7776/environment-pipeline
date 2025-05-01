@@ -7,7 +7,7 @@ pipeline {
     stage("Git check") {
       steps {
         sh '''
-          # rm -rf jenkins-pipeline
+          rm -rf jenkins-pipeline
           git clone https://github.com/sam7776/jenkins-pipeline.git
           echo 'Git working successfully'
         '''
