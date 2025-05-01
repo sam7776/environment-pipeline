@@ -2,7 +2,7 @@ pipeline {
   agent any
   environment {
     namemera = "Nishant ashok meshram"
-    teranaam = "Kanchan Sonwane"
+    teranaam = "Sonu Meshram"
   }
   stages {
     stage("Git check") {
