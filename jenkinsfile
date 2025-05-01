@@ -7,6 +7,7 @@ pipeline {
     stage("Git check") {
       steps {
         sh '''
+          rm -rf jenkins-pipeline
           git clone https://github.com/sam7776/jenkins-pipeline.git
           echo 'Git working successfully'
         '''
@@ -16,6 +17,14 @@ pipeline {
       steps {
         sh '''
           echo "my name is ${namemera}"
+        '''
+      }
+    }
+      stage(" Test Cases") {
+      steps {
+        sh '''
+          echo "Build no is ${BUILD_NO}"
+          echo "Workspace is ${WORKSPACE}"
         '''
       }
     }
